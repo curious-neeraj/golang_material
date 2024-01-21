@@ -11,5 +11,11 @@ The operations allowed to be performed on variables are strictly based on their 
 
 - Go is a **Compiled Language**
 
+- Go has a **Fast Compile Time**\
+The compilation time of Go programs is pretty less. It is thus suitable even for production setup.
+
+- Go has **Built-In Concurrency**\
+Go inheritly supports concurrency via concepts like *go routines*.
+
 
 

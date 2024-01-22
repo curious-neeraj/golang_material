@@ -17,5 +17,6 @@ The compilation time of Go programs is pretty less. It is thus suitable even for
 - Go has **Built-In Concurrency**\
 Go inheritly supports concurrency via concepts like *go routines*.
 
-
+- Go has **Built-In Garbage Collector**\
+The garbage collection in Go is automatic which makes it simple to use for the users as they don't have to handle all this by themselves.
 

@@ -40,3 +40,18 @@ Build and Run in one *Go* 😉
 ```
 go run <file-name-with-extension>
 ```
+
+## Data Types and Variables
+
+**Data-types :**
+1. int, int8, int16, int32, int64, uint, uint8, uint16, uint32, uint64 -- default value = 0
+2. float32, float64 -- default value = 0
+3. rune -- default value = 0
+4. string -- default value = ''
+5. bool -- default value = false
+
+**Variables :**
+There are multiple ways of declaring a variable
+1. _var_ <variable-name> _data_type_
+2. _var_ <variable-name> = <value>
+3. <variable-name> := <value>

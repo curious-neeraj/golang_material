@@ -22,21 +22,21 @@ The garbage collection in Go is automatic which makes it simple to use for the u
 
 ## Basics
 Initialize Go Module
-'''
+```
 go mod init <module-name>
-'''
+```
 
 Build a Go program file to generate a binary file
-'''
+```
 go build <file-name-with-extension>
-'''
+```
 
 Run the compiled binary file
-'''
+```
 ./<file-name>
-'''
+```
 
 Build and Run in one *Go* 😉
-'''
+```
 go run <file-name-with-extension>
-'''
+```

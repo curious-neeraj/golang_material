@@ -20,3 +20,23 @@ Go inheritly supports concurrency via concepts like *go routines*.
 - Go has **Built-In Garbage Collector**\
 The garbage collection in Go is automatic which makes it simple to use for the users as they don't have to handle all this by themselves.
 
+## Basics
+Initialize Go Module
+'''
+go mod init <module-name>
+'''
+
+Build a Go program file to generate a binary file
+'''
+go build <file-name-with-extension>
+'''
+
+Run the compiled binary file
+'''
+./<file-name>
+'''
+
+Build and Run in one *Go* 😉
+'''
+go run <file-name-with-extension>
+'''

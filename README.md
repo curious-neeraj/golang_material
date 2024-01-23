@@ -95,3 +95,12 @@ map2 := map[string]int{"Neeraj": 11, "AI": 10}
 // Delete value from map
 delete(map2, "AI")
 ```
+
+## String, Rune
+- String is immutable in Go
+- String is a collection of bytes in Go (instead of char)
+```
+// This would tell us that the type of indexed value in string isnt char
+var str string = "neeraj"
+fmt.Printf("value = %v, type = %T \n", str[0], str[0])
+```

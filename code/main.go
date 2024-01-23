@@ -27,6 +27,7 @@ func main() {
 	learnArray()
 	learnSlice()
 	learnMap()
+	learnString()
 }
 
 func printValue(value string) {
@@ -65,26 +66,26 @@ func learnArray() {
 	}
 
 	for i, val := range intArr3 {
-		fmt.Printf("Index = %v, Value = %v\n", i, val)
+		fmt.Printf("Index = %v, Value = %v \n", i, val)
 	}
 }
 
 func learnSlice() {
 	// Slice is just a wrapper around Array
 	var intSlice []int = []int{1, 2, 3, 4}
-	fmt.Printf("Length = %v, Capacity = %v\n", len(intSlice), cap(intSlice))
+	fmt.Printf("Length = %v, Capacity = %v \n", len(intSlice), cap(intSlice))
 
 	intSlice = append(intSlice, 5)
-	fmt.Printf("Length = %v, Capacity = %v\n", len(intSlice), cap(intSlice))
+	fmt.Printf("Length = %v, Capacity = %v \n", len(intSlice), cap(intSlice))
 
 	// Appending multiple elements to slice
 	intSlice2 := []int{6, 7}
 	intSlice = append(intSlice, intSlice2...)
-	fmt.Printf("Length = %v, Capacity = %v\n", len(intSlice), cap(intSlice))
+	fmt.Printf("Length = %v, Capacity = %v \n", len(intSlice), cap(intSlice))
 
 	// Iterate Slice
 	for i, val := range intSlice {
-		fmt.Printf("Index = %v, Value = %v\n", i, val)
+		fmt.Printf("Index = %v, Value = %v \n", i, val)
 	}
 }
 
@@ -108,9 +109,9 @@ func learnMap() {
 	// 			  = false, if key doesn't exist
 	var val, ok = map2["Common Sense"]
 	if ok {
-		fmt.Printf("Value Exists for the given Key : %v\n", val)
+		fmt.Printf("Value Exists for the given Key : %v \n", val)
 	} else {
-		fmt.Printf("Key doesn't exist in the map\n")
+		fmt.Printf("Key doesn't exist in the map \n")
 	}
 
 	// Delete value from map
@@ -118,6 +119,12 @@ func learnMap() {
 
 	// Iterate Array
 	for name, val := range map2 {
-		fmt.Printf("Key = %v, Value = %v\n", name, val)
+		fmt.Printf("Key = %v, Value = %v \n", name, val)
 	}
+}
+
+func learnString() {
+	// String is immutable in Go
+	var str string = "neeraj"
+	fmt.Printf("value = %v, type = %T \n", str[0], str[0])
 }

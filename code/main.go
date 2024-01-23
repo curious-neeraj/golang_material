@@ -125,6 +125,9 @@ func learnMap() {
 
 func learnString() {
 	// String is immutable in Go
-	var str string = "neeraj"
-	fmt.Printf("value = %v, type = %T \n", str[0], str[0])
+	var str1 string = "neeraj"
+	fmt.Printf("value = %v, type = %T \n", str1[0], str1[0])
+
+	var str2 = []rune("neeraj")
+	fmt.Printf("value = %v, type = %T \n", str2[0], str2[0])
 }

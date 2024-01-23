@@ -98,9 +98,13 @@ delete(map2, "AI")
 
 ## String, Rune
 - String is immutable in Go
-- String is a collection of bytes in Go (instead of char)
+- String is a collection of UTF-8 values in Go (instead of char)
+- Rune = Unicode point numbers representing characters
 ```
 // This would tell us that the type of indexed value in string isnt char
 var str string = "neeraj"
 fmt.Printf("value = %v, type = %T \n", str[0], str[0])
+
+var str2 = []rune("neeraj")
+fmt.Printf("value = %v, type = %T \n", str2[0], str2[0])
 ```

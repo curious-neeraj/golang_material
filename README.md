@@ -56,3 +56,42 @@ There are multiple ways of declaring a variable
 1. _var_ \<variable-name> _data_type_
 2. _var_ \<variable-name> = <value>
 3. \<variable-name> := \<value>
+
+## Array
+- Same Type
+- Fixed Length
+- Indexable (Zero indexed)
+- Contiguous Memory Allocation
+```
+var intArr1 [3]int // Filled with Default value of datatype
+intArr2 := [3]int{1, 2, 3}
+intArr3 := [...]int{1, 2, 3, 4, 5} // Without specifying exact length
+
+```
+
+## Slice
+- Wrapper around Array
+- Convenient Interface to sequence of data
+```
+var intSlice []int = []int{1, 2, 3, 4}
+intSlice = append(intSlice, 5)
+
+// Appending multiple elements to slice
+intSlice2 := []int{6, 7}
+intSlice = append(intSlice, intSlice2...)	
+```
+
+## Map
+- Key, Value pair
+- Always return a value, even if key doesn't exist
+```
+// Empty Map - map1 = map[]
+// key type -> string, value type -> int
+var map1 map[string]int = make(map[string]int)
+
+//Initialized Map
+map2 := map[string]int{"Neeraj": 11, "AI": 10}
+	
+// Delete value from map
+delete(map2, "AI")
+```

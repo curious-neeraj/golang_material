@@ -8,6 +8,7 @@ import (
 func main() {
 	printValue("Welcome to GO-land!")
 
+	// Variable
 	var value1 int = 25
 	var value2 int = 10
 

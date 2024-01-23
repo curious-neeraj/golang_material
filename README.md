@@ -1,4 +1,4 @@
-# golang_material
+# Golang Study Material
 Repository to keep some basic teaching material for golang handy.
 
 Some Salient Feature of GO -

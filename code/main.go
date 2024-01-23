@@ -5,6 +5,20 @@ import (
 	"fmt"
 )
 
+type employee struct {
+	id   int
+	name string
+	dept
+}
+
+type dept struct {
+	deptName string
+}
+
+func (e employee) department() string {
+	return e.deptName
+}
+
 func main() {
 	printValue("Welcome to GO-land!")
 
@@ -28,6 +42,7 @@ func main() {
 	learnSlice()
 	learnMap()
 	learnString()
+	learnStruct()
 }
 
 func printValue(value string) {
@@ -130,4 +145,11 @@ func learnString() {
 
 	var str2 = []rune("neeraj")
 	fmt.Printf("value = %v, type = %T \n", str2[0], str2[0])
+}
+
+func learnStruct() {
+	var emp1 employee = employee{1, "Neeraj", dept{"Core"}}
+	fmt.Println(emp1.id, emp1.name, emp1.deptName)
+	departmentName := emp1.department()
+	fmt.Printf("Department Name: %v \n", departmentName)
 }

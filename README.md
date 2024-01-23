@@ -108,3 +108,23 @@ fmt.Printf("value = %v, type = %T \n", str[0], str[0])
 var str2 = []rune("neeraj")
 fmt.Printf("value = %v, type = %T \n", str2[0], str2[0])
 ```
+
+## Structure and Interface
+- Structures are used to define custom types
+- Interface is very helpful in making generic type functions over different types
+```
+type employee struct {
+	id   int
+	name string
+	dept
+}
+
+type dept struct {
+	deptName string
+}
+
+// Method tied to Structure
+func (e employee) department() string {
+	return e.deptName
+}
+```

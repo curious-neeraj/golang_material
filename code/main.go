@@ -44,6 +44,10 @@ func main() {
 	learnString()
 	learnStruct()
 	learnPointer()
+
+	addGeneric[int](1, 2)
+	addGeneric[float32](1, 2.50)
+	addGeneric[float64](2.512, 2.512)
 }
 
 func printValue(value string) {
@@ -168,4 +172,13 @@ func learnPointer() {
 	// Change value of 'i' using pointer 'p'
 	*p = 11
 	fmt.Println(i)
+}
+
+// Keeping type of parameter and return value Generic
+func addGeneric[T int | float32 | float64](val1 T, val2 T) T {
+	// Initializing sum - generic type T
+	var sum T = val1 + val2
+
+	fmt.Printf("Sum = %v \n", sum)
+	return sum
 }

@@ -143,3 +143,16 @@ p = &i
 // Change value of 'i' using pointer 'p'
 *p = 11
 ```
+
+## Generics
+- We can have Generic type to make functions reusable
+- Similar to template in C++
+```
+// Keeping type of parameter and return value Generic
+func addGeneric[T int | float32 | float64](val1 T, val2 T) T {
+	// Initializing sum - generic type T
+	var sum T = val1 + val2
+	fmt.Printf("Sum = %v \n", sum)
+	return sum
+}
+```

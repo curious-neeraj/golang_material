@@ -43,6 +43,7 @@ func main() {
 	learnMap()
 	learnString()
 	learnStruct()
+	learnPointer()
 }
 
 func printValue(value string) {
@@ -152,4 +153,19 @@ func learnStruct() {
 	fmt.Println(emp1.id, emp1.name, emp1.deptName)
 	departmentName := emp1.department()
 	fmt.Printf("Department Name: %v \n", departmentName)
+}
+
+func learnPointer() {
+
+	// Default value = nil
+	var p *int
+	var i int = 10
+
+	// Assign address of variable 'i'
+	p = &i
+	fmt.Println(p)
+
+	// Change value of 'i' using pointer 'p'
+	*p = 11
+	fmt.Println(i)
 }

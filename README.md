@@ -128,3 +128,18 @@ func (e employee) department() string {
 	return e.deptName
 }
 ```
+
+## Pointers
+- Pointers in Go are similar to those in C++
+- Used to store memory address
+```
+// Default value = nil
+var p *int
+
+// Assign address of variable 'i'
+var i int = 10
+p = &i
+
+// Change value of 'i' using pointer 'p'
+*p = 11
+```

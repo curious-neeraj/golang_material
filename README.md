@@ -19,6 +19,7 @@ Go inheritly supports concurrency via concepts like *go routines*.
 
 - Go has **Built-In Garbage Collector**\
 The garbage collection in Go is automatic which makes it simple to use for the users as they don't have to handle all this by themselves.
+The important point to note here is that Go, unline Java's whole JVM, packs a small piece of extra code called ***Go Runtime*** which manages garbage collection.
 
 ## Basics
 Initialize Go Module

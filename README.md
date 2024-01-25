@@ -100,7 +100,7 @@ delete(map2, "AI")
 ## String, Rune
 - String is immutable in Go
 - String is a collection of UTF-8 values in Go (instead of char)
-- Rune = Unicode point numbers representing characters
+- Rune = Unicode point numbers representing characters / Alias for int32
 ```
 // This would tell us that the type of indexed value in string isnt char
 var str string = "neeraj"

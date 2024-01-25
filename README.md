@@ -54,7 +54,7 @@ go run <file-name-with-extension>
 
 There are multiple ways of declaring a variable
 1. _var_ \<variable-name> _data_type_
-2. _var_ \<variable-name> = <value>
+2. _var_ \<variable-name> = \<value>
 3. \<variable-name> := \<value>
 
 ## Array

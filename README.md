@@ -58,6 +58,8 @@ There are multiple ways of declaring a variable
 2. _var_ \<variable-name> = \<value>
 3. \<variable-name> := \<value>
 
+> Outside of a function (in the global/package scope), every statement begins with a keyword (var, func, and so on) and so the := construct is not available.
+
 ## Array
 - Same Type
 - Fixed Length

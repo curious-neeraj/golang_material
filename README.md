@@ -60,6 +60,13 @@ There are multiple ways of declaring a variable
 
 > Outside of a function (in the global/package scope), every statement begins with a keyword (var, func, and so on) and so the := construct is not available.
 
+>**Constants :**
+
+Constants are used to have a value tied to a key (and make it immutable)
+Declaring a constant - `const <key> <type> = value`
+
+**Note - We cannot use `:=` for constants**
+
 ## Array
 - Same Type
 - Fixed Length

@@ -26,6 +26,10 @@ func main() {
 	var value1 int = 25
 	var value2 int = 10
 
+	// Constants
+	const name string = "neeraj"
+	fmt.Println(name)
+
 	// Direct Assigning value - use of :=
 	// This is equivalent to :
 	// var quotient, remainder int = divide(value1, value2)

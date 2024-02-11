@@ -42,6 +42,8 @@ Build and Run in one *Go* 😉
 go run <file-name-with-extension>
 ```
 
+> Generally we use a Makefile to set these commands and use `make <command>` instead.
+
 ## Data Types and Variables
 
 >**Data-types :**
